@@ -3,278 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAY FILM - 기관·방송·교육 분야 영상 포트폴리오</title>
+    <meta name="description" content="MAY FILM은 기관·방송·교육 분야를 중심으로 기획·촬영·편집까지 전 과정을 수행하는 경남 기반 영상 제작 스튜디오입니다.">
     
-    <!-- SEO Meta Tags -->
-    <title>MAY FILM | 기관·방송·교육 영상 포트폴리오</title>
-    <meta name="description" content="경남 기반 영상 제작 스튜디오 MAY FILM의 포트폴리오. 기관, 방송, 교육 분야의 영상 제작 서비스를 제공합니다.">
-    <meta name="author" content="MAY FILM">
-    
-    <!-- Open Graph Meta Tags (for social sharing) -->
-    <meta property="og:title" content="MAY FILM | 기관·방송·교육 영상 포트폴리오">
-    <meta property="og:description" content="기관, 방송, 교육 분야를 중심으로 기획·촬영·편집까지 전 과정을 수행하는 영상 제작 스튜디오입니다.">
+    <!-- Open Graph 태그 -->
+    <meta property="og:title" content="MAY FILM - 기관·방송·교육 분야 영상 포트폴리오">
+    <meta property="og:description" content="기관·방송·교육 분야를 중심으로 기획·촬영·편집까지 전 과정을 수행하는 경남 기반 영상 제작 스튜디오">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-website-url.com"> <!-- TODO: 실제 웹사이트 주소로 변경하세요 -->
-    <meta property="og:image" content="https://your-website-url.com/assets/og-image.png"> <!-- TODO: OG 이미지 경로를 설정하세요 (예: 1200x630px) -->
-    <meta property="og:image:alt" content="MAY FILM 로고와 포트폴리오 하이라이트">
+    <meta property="og:url" content="https://mayfilm.github.io">
+    <meta property="og:image" content="/assets/og-image.jpg">
     
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- TODO: favicon.ico 파일을 루트에 추가하세요 -->
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"> <!-- TODO: 애플 터치 아이콘 추가 (선택 사항) -->
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Structured Data (JSON-LD) for SEO -->
+    <!-- 파비콘 (추후 교체) -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    
+    <!-- 구조화 데이터 -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "MAY FILM",
-      "url": "https://your-website-url.com",
-      "logo": "https://your-website-url.com/assets/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MAY FILM",
+        "description": "기관·방송·교육 분야 영상 제작 스튜디오",
+        "url": "https://mayfilm.github.io",
         "email": "contact@mayfilm.kr",
-        "contactType": "customer service"
-      }
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "경상남도",
+            "addressCountry": "KR"
+        }
     }
     </script>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- 
-      편집 가이드: 
-      - 이 파일은 사이트의 전체 구조를 담고 있습니다.
-      - 텍스트를 수정하거나, '대표 작업물' 섹션에서 <article> 태그를 복사하여 새 프로젝트를 추가할 수 있습니다.
-      - 로고 월에 로고를 추가하려면 '주요 파트너' 섹션의 <ul> 안에 <li> 항목을 추가하세요.
-    -->
-
-    <header class="site-header">
-        <div class="container header-container">
-            <a href="#" class="logo">MAY FILM</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <!-- 헤더 내비게이션 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>MAY FILM</h1>
+            </div>
+            <nav class="nav">
+                <a href="#works">Works</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">🌙</button>
             </nav>
-            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="다크 모드 전환">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </button>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container text-center">
-                <h1>기관·방송·교육 분야 영상 포트폴리오</h1>
-                <p class="subtitle">MAY FILM — 경남 기반 영상 제작 스튜디오</p>
+        <!-- 히어로 섹션 -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">기관·방송·교육 분야 영상 포트폴리오</h2>
+                    <p class="hero-subtitle">MAY FILM — 경남 기반 영상 제작 스튜디오</p>
+                    
+                    <!-- YouTube 임베드 (지연 로딩) -->
+                    <div class="video-container" id="showreelContainer">
+                        <div class="video-placeholder" onclick="loadVideo('sr0FrVedS84', this)">
+                            <div class="play-button">▶</div>
+                            <span>쇼릴 영상 보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 숫자 인포그래픽 -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">총 제작 영상</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">협업 기관·기업</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">방송 시리즈</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 로고 월 -->
+        <section class="logo-wall">
+            <div class="container">
+                <h3>협업 파트너</h3>
+                <div class="logo-grid">
+                    <!-- 로고 추가하려면 li 태그를 복사하여 추가하세요 -->
+                    <div class="logo-item"><span>MBC경남</span></div>
+                    <div class="logo-item"><span>경남대학교</span></div>
+                    <div class="logo-item"><span>밀양시</span></div>
+                    <div class="logo-item"><span>함안군</span></div>
+                    <div class="logo-item"><span>양산남부시장</span></div>
+                    <div class="logo-item"><span>김해시</span></div>
+                    <div class="logo-item"><span>경상남도</span></div>
+                    <div class="logo-item"><span>휘테커</span></div>
+                    <div class="logo-item"><span>파운더</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 대표작 그리드 -->
+        <section id="works" class="works">
+            <div class="container">
+                <h3>대표작</h3>
                 
-                <!-- YouTube Lazy Load Container -->
-                <div id="youtube-embed" class="youtube-embed" data-youtube-id="sr0FrVedS84">
-                    <!-- 썸네일 이미지: 고화질 썸네일(maxresdefault.jpg)을 사용하고, 없을 경우 hqdefault.jpg로 대체됩니다. -->
-                    <img src="https://img.youtube.com/vi/sr0FrVedS84/maxresdefault.jpg" 
-                         onerror="this.onerror=null; this.src='https://img.youtube.com/vi/sr0FrVedS84/hqdefault.jpg';"
-                         alt="쇼릴 영상 썸네일" loading="lazy">
-                    <button class="play-button" aria-label="쇼릴 영상 재생"></button>
+                <!-- 방송/언론 카테고리 -->
+                <div class="category">
+                    <h4>방송/언론</h4>
+                    <div class="works-grid">
+                        <!-- 작품 카드 추가하려면 아래 work-card div를 복사하여 추가하세요 -->
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>MBC경남 '밀톡2'</h5>
+                                <p class="work-client">MBC경남</p>
+                                <p class="work-role">편집</p>
+                                <a href="https://youtu.be/sr0FrVedS84" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>MBC경남 '히든챔피언'</h5>
+                                <p class="work-client">MBC경남</p>
+                                <p class="work-role">촬영·편집·로고</p>
+                                <a href="https://youtu.be/agIUih-b6r0" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>헬로tv뉴스 '오픈토크'</h5>
+                                <p class="work-client">헬로tv뉴스</p>
+                                <p class="work-role">편집</p>
+                                <a href="https://youtu.be/kW8Qv5bCPXA" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 공공기관/지자체 카테고리 -->
+                <div class="category">
+                    <h4>공공기관/지자체</h4>
+                    <div class="works-grid">
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>밀양시 우수도시 홍보</h5>
+                                <p class="work-client">밀양시</p>
+                                <p class="work-role">편집</p>
+                                <a href="https://youtu.be/NuKKnF-wAQo" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>함안청년센터 홍보</h5>
+                                <p class="work-client">함안청년센터</p>
+                                <p class="work-role">편집</p>
+                                <a href="https://youtu.be/T3C9ileIf6M" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 대학교/교육기관 카테고리 -->
+                <div class="category">
+                    <h4>대학교/교육기관</h4>
+                    <div class="works-grid">
+                        <div class="work-card">
+                            <div class="work-thumbnail"></div>
+                            <div class="work-info">
+                                <h5>경남대 기계공학부 특강</h5>
+                                <p class="work-client">경남대학교</p>
+                                <p class="work-role">촬영·편집</p>
+                                <a href="https://youtu.be/KqjhtQ5aT_c" target="_blank" class="work-link">영상 보기</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Infographic Section -->
-        <section id="stats" class="stats-section">
-            <div class="container stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">120+</span>
-                    <p class="stat-label">총 제작 영상</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">30+</span>
-                    <p class="stat-label">협업 기관·기업</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <p class="stat-label">방송 시리즈</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Logo Wall Section -->
-        <section id="clients" class="clients-section">
-            <div class="container text-center">
-                <h2>주요 파트너</h2>
-                <div class="logo-wall">
-                    <!-- 로고 추가: 아래 <li> 태그를 복사하여 로고 이름을 수정하세요. -->
-                    <div class="logo-item">MBC경남</div>
-                    <div class="logo-item">경상남도</div>
-                    <div class="logo-item">경남대학교</div>
-                    <div class="logo-item">밀양시</div>
-                    <div class="logo-item">김해시</div>
-                    <div class="logo-item">함안군</div>
-                    <div class="logo-item">양산남부시장</div>
-                    <div class="logo-item">휘테커</div>
-                    <div class="logo-item">파운더</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Works Section -->
-        <section id="works" class="works-section">
+        <!-- About 섹션 -->
+        <section id="about" class="about">
             <div class="container">
-                <h2 class="text-center">대표 작업물</h2>
-                <div class="works-grid">
-                    <!-- 
-                      대표작 카드 추가 가이드:
-                      아래 <article class="work-card"> ... </article> 블록을 복사하여
-                      내용(h3, p, a 태그의 href)을 수정하면 새 작업물을 추가할 수 있습니다.
-                    -->
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>MBC경남 ‘밀톡2’</h3>
-                            <p>방송/언론 | 편집</p>
-                            <a href="https://youtu.be/sr0FrVedS84" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>MBC경남 ‘히든챔피언’</h3>
-                            <p>방송/언론 | 촬영·편집·로고</p>
-                            <a href="https://youtu.be/agIUih-b6r0" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>헬로tv뉴스 ‘오픈토크’</h3>
-                            <p>방송/언론 | 편집</p>
-                            <a href="https://youtu.be/kW8Qv5bCPXA" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>밀양시 우수도시 홍보</h3>
-                            <p>공공기관/지자체 | 편집</p>
-                            <a href="https://youtu.be/NuKKnF-wAQo" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>함안청년센터 홍보</h3>
-                            <p>공공기관/지자체 | 편집</p>
-                            <a href="https://youtu.be/T3C9ileIf6M" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-thumbnail"></div>
-                        <div class="work-info">
-                            <h3>경남대 기계공학부 특강</h3>
-                            <p>대학교/교육기관 | 촬영·편집</p>
-                            <a href="https://youtu.be/KqjhtQ5aT_c" target="_blank" rel="noopener noreferrer" class="work-link">영상 보기</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container about-container">
-                <div class="about-text">
-                    <h2>About</h2>
+                <h3>About</h3>
+                <div class="about-content">
                     <p>기관·방송·교육 분야를 중심으로 기획·촬영·편집까지 전 과정을 수행합니다. 지역 기반의 신뢰와 빠른 납품을 강점으로 합니다.</p>
-                </div>
-                <div class="about-details">
-                    <div>
-                        <h3>경력 (발췌)</h3>
-                        <ul>
-                            <li>MBC경남 AD (2024)</li>
-                            <li>프리랜서 편집/PD</li>
-                            <li>파운더 콘텐츠제작부 (2025.03~08)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>수상</h3>
-                        <ul>
-                            <li>경남도민일보 청년 공모전 (숏폼)</li>
-                            <li>2023 U300</li>
-                            <li>경남대 창업경진대회 대상</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>자격</h3>
-                        <ul>
-                            <li>GTQ 포토샵 1급</li>
-                            <li>GTQ 인디자인 1급</li>
-                            <li>ACA Premiere Pro 2020</li>
-                        </ul>
+                    
+                    <div class="credentials">
+                        <div class="credential-section">
+                            <h4>경력</h4>
+                            <ul>
+                                <li>MBC경남 AD (2024)</li>
+                                <li>프리랜서 편집/PD</li>
+                                <li>파운더 콘텐츠제작부 (2025.03~08)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="credential-section">
+                            <h4>수상</h4>
+                            <ul>
+                                <li>경남도민일보 청년 공모전 (숏폼)</li>
+                                <li>2023 U300</li>
+                                <li>경남대 창업경진대회 대상</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="credential-section">
+                            <h4>자격증</h4>
+                            <ul>
+                                <li>GTQ 포토샵 1급</li>
+                                <li>GTQ 인디자인 1급</li>
+                                <li>ACA Premiere Pro 2020</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <!-- Contact 섹션 -->
+        <section id="contact" class="contact">
             <div class="container">
-                <h2 class="text-center">Contact</h2>
-                <p class="text-center">프로젝트 문의는 아래 이메일 또는 문의 양식을 이용해주세요.</p>
-                <p class="text-center contact-email">
-                    <a href="mailto:contact@mayfilm.kr">contact@mayfilm.kr</a>
-                </p>
-
-                <form id="contact-form" class="contact-form">
-                    <!-- 
-                      문의 폼 작동 방식:
-                      현재는 사용자의 이메일 클라이언트(Gmail, Outlook 등)를 열어주는 mailto: 방식으로 작동합니다.
-                      서버 없이 간편하게 문의를 받을 수 있습니다.
-                      
-                      만약 Formspree 같은 외부 서비스를 사용하려면,
-                      1. Formspree에서 엔드포인트 URL을 받습니다.
-                      2. 아래 form 태그의 action 속성에 URL을 넣고, method="POST"를 추가합니다.
-                         <form id="contact-form" action="https://formspree.io/f/your_endpoint" method="POST">
-                      3. main.js 파일에서 contact-form 관련 자바스크립트 코드를 삭제하거나 주석 처리합니다.
-                    -->
-                    <div class="form-group">
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name" required>
+                <h3>Contact</h3>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>프로젝트 문의나 협업 제안이 있으시면 언제든 연락주세요.</p>
+                        <a href="mailto:contact@mayfilm.kr" class="email-link">contact@mayfilm.kr</a>
                     </div>
-                    <div class="form-group">
-                        <label for="email">이메일</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">내용</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">문의 보내기</button>
-                </form>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">문의 내용</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">문의하기</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container text-center">
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MAY FILM</p>
             <div class="social-links">
-                <!-- TODO: 실제 소셜 미디어 링크로 변경하세요 -->
-                <a href="#" aria-label="YouTube">YouTube</a>
-                <a href="#" aria-label="Instagram">Instagram</a>
+                <!-- 소셜 링크 추가 시 아래 링크를 수정하세요 -->
+                <a href="https://youtube.com/@mayfilm" target="_blank" aria-label="YouTube">📺</a>
+                <a href="https://instagram.com/mayfilm.kr" target="_blank" aria-label="Instagram">📷</a>
             </div>
-            <p>&copy; <span id="current-year"></span> MAY FILM. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
 </body>
 </html>
